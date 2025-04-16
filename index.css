@@ -1,0 +1,122 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: "Karla", sans-serif;
+    font-weight: 500;
+}
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 120vh;
+    background-color: hsl(148, 38%, 91%);
+}
+section form {
+    padding: 20px 30px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px;
+    font-size: 13px;
+    color: hsl(186, 15%, 59%);
+}
+section form h1 {
+    color: hsl(187, 24%, 22%);
+    font-size: 30px;
+}
+section form .namecover {
+    display: flex;
+    gap: 10px;
+    margin-block: 20px;
+}
+input {
+    border: 1px solid hsl(148, 38%, 91%);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-block: 5px;
+}
+section form .email-cover input {
+    width: 90%;
+    box-shadow: 1px -1px 2px hsl(186, 15%, 59%);
+}
+section form .email-cover {
+    margin-block: 10px;
+}
+section form .query {
+    margin-block: 20px;
+}
+section form .query p {
+    margin-block: 5px;
+}
+section form .query div {
+    display: flex;
+    gap: 10px;
+}
+section form .query label {
+    border: 1px solid hsl(148, 38%, 91%);
+    padding: 7px 20px;
+    width: 50%;
+    border-radius: 10px;
+}
+section form .message-cover textarea {
+    width: 95%;
+    margin-block: 10px;
+    padding: 10px;
+    min-height: 13vh;
+    border-radius: 5px;
+    border: 1px solid hsl(186, 15%, 59%);
+}
+section form .checkcover {
+    margin-block: 20px;
+}
+section form button {
+    width: 100%;
+    padding-block: 8px;
+    background-color: hsl(169, 82%, 27%);
+    color: hsl(0, 0%, 100%);
+    border: none;
+    border-radius: 5px;
+}
+section form .sent {
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 38%;
+    background-color: hsl(187, 24%, 22%);
+    color: hsl(0, 0%, 100%);
+    padding: 15px 10px;
+    border-radius: 10px;
+}
+section form .sent div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-block: 10px;
+}
+@media screen and (min-width: 0px) and (max-width: 700px) { 
+    section form {
+        width: 80%;
+        padding: 25px 10px;
+    }
+    section form .namecover {
+        gap: 25px;
+    }
+    section form .namecover input {
+        width: 70%;
+    }
+    section form .email-cover input {
+        width: 85%;
+    }
+    section form .message-cover textarea {
+        width: 92%;
+    }
+    section form .sent {
+        left: 22%;
+        width: 50%;
+    }
+}
+@media screen and (min-width: 700px) and (max-width: 1100px) {
+    section form .sent {
+        left: 40%;
+        width: 20%;
+    }
+}
